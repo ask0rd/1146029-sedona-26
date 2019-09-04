@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр А.](https://up.htmlacademy.ru/htmlcss/26/user/1146029).
-* Наставник: `Елизавета Винокурова` (https://htmlacademy.ru/profile/elivin).
+* Наставник: [Елизавета Винокурова](https://up.htmlacademy.ru/htmlcss/26/user/123355).
 
 ---
 

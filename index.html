@@ -119,19 +119,21 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           <p>
             <label for="arrival">Дата заезда:</label>
-            <input type="text" id ="arrival" name="arrival date" value="" placeholder="24 апреля 2017" aria-label="Дата заезда">
+            <input type="text" id ="arrival" name="arrival_date" value="" placeholder="24 апреля 2017" aria-label="Дата заезда">
+            <button type="button" aria-label="Выбор даты заезда в календаре">Календарь</button>
           </p>
           <p>
             <label for="departure">Дата выезда:</label>
-            <input type="text" id="departure" name="departure date" value="" placeholder="4 июля 2017" aria-label="Дата выезда">
+            <input type="text" id="departure" name="departure_date" value="" placeholder="4 июля 2017" aria-label="Дата выезда">
+            <button type="button" aria-label="Выбор даты выезда в календаре">Календарь</button>
           </p>
           <p>
             <label for="adult">Взрослые:</label>
-            <input type="number" id="adult" name="adult amount" value="" placeholder="2" aria-label="Поле для выбора количества взрослых">
+            <input type="number" id="adult" name="adult_amount" value="" placeholder="2" aria-label="Поле для выбора количества взрослых">
           </p>
           <p>
             <label for="child">Дети:</label>
-            <input type="number" id="child" name="child amount" value="" placeholder="0" aria-label="Поле для выбора количества детей">
+            <input type="number" id="child" name="child_amount" value="" placeholder="0" aria-label="Поле для выбора количества детей">
           </p>
           <button type="submit" aria-label="Кнопка для поиска гостиниц">Найти</button>
         </form>
@@ -147,9 +149,9 @@
       </p>
       <div>
         <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li><a class="visually-hidden" href="#" aria-label="Седона в Twitter">Twitter</a></li>
+          <li><a class="visually-hidden" href="#" aria-label="Седона на Facebook">Facebook</a></li>
+          <li><a class="visually-hidden" href="#" aria-label="Седона в YouTube"></a>YouTube</li>
         </ul>
       </div>
       <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademylogo.svg" width="114" height="40" alt="Логотип HTML Academy"></a></p>

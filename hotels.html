@@ -17,9 +17,38 @@
       </nav>
     </header>
     <main>
-      <h1>Поиск гостиниц в Седоне</h1>
+      <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
       <section>
-        <h2>Сортировка найденных гостиниц</h2>
+        <h2 class="visually-hidden">Фильтрация результатов поиска</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            Инфраструктура:
+            <ul>
+              <li><input type="checkbox" id="filer-pool" name="pool" checked aria-label="Наличие бассейна">Бассейн</li>
+              <li><input type="checkbox" id="filer-parking" name="parking" aria-label="Наличие парковки">Парковка</li>
+              <li><input type="checkbox" id="filer-wifi" name="wifi" aria-label="Наличие Wi-Fi">Wi-Fi</li>
+            </ul>
+          </p>
+          <p>
+            Тип жилья:
+            <ul>
+              <li><input type="checkbox" checked>Гостиница</li>
+              <li><input type="checkbox" checked>Мотель</li>
+              <li><input type="checkbox" checked>Апартаменты</li>
+            </ul>
+          </p>
+          <p>
+            Стоимость в сутки (Р):
+            <label for="min price">От</label>
+            <input type="text" id="min price" name="low cost" placeholder="От 0" aria-label="Стоимость в сутки от введенной суммы">
+            <label for="max price">До</label>
+            <input type="text" id="max price" name="high cost" placeholder="До 3000" aria-label="Стоимость в сутки до введенной суммы">
+          </p>
+          <button type="submit" aria-label="Отфильтровать результаты">Показать</button>
+        </form>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Сортировка найденных гостиниц</h2>
         <p>Найдено: 3</p>
         <p>
           Сортировка:
@@ -27,13 +56,13 @@
             <li><a href="">По цене</a></li>
             <li><a href="">По типу</a></li>
             <li><a href="">По рейтингу</a></li>
-            <li><a href="">Вверх</a></li>
-            <li><a href="">Вниз</a></li>
+            <li><a class="visually-hidden" href="">Вверх</a></li>
+            <li><a class="visually-hidden" href="">Вниз</a></li>
           </ul>
         </p>
       </section>
       <section>
-        <h2>Перечисление найденных гостиниц</h2>
+        <h2 class="visually-hidden">Перечисление найденных гостиниц</h2>
         <ul>
           <li>
             <article>

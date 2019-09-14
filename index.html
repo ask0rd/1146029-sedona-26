@@ -17,9 +17,9 @@
       </nav>
     </header>
     <main>
-      <h1>Туристический городок "Седона"</h1>
+      <h1 class="visually-hidden">Туристический городок "Седона"</h1>
       <section>
-        <h2>Преимущества Седоны</h2>
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         <ul>
@@ -84,7 +84,7 @@
               - №3 -
             </p>
             <p>
-              Все достопричательности находятся очень близко
+              Все достопримечательности находятся очень близко
             </p>
           </li>
            <li>
@@ -112,14 +112,32 @@
         </ul>
       </section>
       <section>
-        <h2>Поиск гостиниц</h2>
+        <h2 class="visually-hidden">Поиск гостиниц</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a href="hotels.html">Поиск гостиницы в Седоне</a>
-        <!-- Место для формы -->
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label for="arrival">Дата заезда:</label>
+            <input type="text" id ="arrival" name="arrival date" value="" placeholder="24 апреля 2017" aria-label="Дата заезда">
+          </p>
+          <p>
+            <label for="departure">Дата выезда:</label>
+            <input type="text" id="departure" name="departure date" value="" placeholder="4 июля 2017" aria-label="Дата выезда">
+          </p>
+          <p>
+            <label for="adult">Взрослые:</label>
+            <input type="number" id="adult" name="adult amount" value="" placeholder="2" aria-label="Поле для выбора количества взрослых">
+          </p>
+          <p>
+            <label for="child">Дети:</label>
+            <input type="number" id="child" name="child amount" value="" placeholder="0" aria-label="Поле для выбора количества детей">
+          </p>
+          <button type="submit" aria-label="Кнопка для поиска гостиниц">Найти</button>
+        </form>
       </section>
       <section>
-        <h2>Расположение Седоны на карте</h2>
+        <h2 class="visually-hidden">Расположение Седоны на карте</h2>
         <img src="img/map.jpg" width="1200" height="594" alt="Расположение Седоны на карте">
       </section>
     </main>

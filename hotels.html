@@ -19,24 +19,41 @@
     <main>
       <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
       <section>
-        <h2 class="visually-hidden">Фильтрация результатов поиска</h2>
+        <h2 class="visually-hidden">Подбор гостиниц с установленными параметрами</h2>
         <form action="https://echo.htmlacademy.ru" method="POST">
-          <p>
-            Инфраструктура:
+          <fieldset>
+            <legend>Инфраструктура:</legend>
             <ul>
-              <li><input type="checkbox" id="filer-pool" name="pool" checked aria-label="Наличие бассейна">Бассейн</li>
-              <li><input type="checkbox" id="filer-parking" name="parking" aria-label="Наличие парковки">Парковка</li>
-              <li><input type="checkbox" id="filer-wifi" name="wifi" aria-label="Наличие Wi-Fi">Wi-Fi</li>
+              <li>
+                <input type="checkbox" id="filer-pool" name="pool" checked aria-label="Наличие бассейна">
+                <label for="filer-pool"><span class="visually-hidden">Бассейн</span></label>
+              </li>
+              <li>
+                <input type="checkbox" id="filer-parking" name="parking" aria-label="Наличие парковки">
+                <label for="filer-parking"><span class="visually-hidden">Парковка</span></label>
+              </li>
+              <li>
+                <input type="checkbox" id="filer-wifi" name="wifi" aria-label="Наличие Wi-Fi">
+                <label for="filer-wifi"><span class="visually-hidden">Wi-Fi</span></label>
+              </li>
             </ul>
-          </p>
-          <p>
-            Тип жилья:
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
             <ul>
-              <li><input type="checkbox" checked>Гостиница</li>
-              <li><input type="checkbox" checked>Мотель</li>
-              <li><input type="checkbox" checked>Апартаменты</li>
+              <li>
+                <input type="checkbox" checked id="filter-hotel" name="hotel">
+                <label for="filter-hotel"><span class="visually-hidden">Гостиница</span></label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-motel" name="motel" checked>
+                <label for="filter-motel"><span class="visually-hidden">Мотель</span></label>
+              </li>
+              <li>
+                <input type="checkbox" checked id="filter-apart" name="apart">
+                <label for="filter-apart"><span class="visually-hidden">Апартаменты</span></label>
+              </li>
             </ul>
-          </p>
           <p>
             Стоимость в сутки (Р):
             <label for="min price">От</label>
@@ -44,6 +61,7 @@
             <label for="max price">До</label>
             <input type="text" id="max_price" name="high_cost" placeholder="До 3000" aria-label="Стоимость в сутки до введенной суммы">
           </p>
+          </fieldset>
           <button type="submit" aria-label="Отфильтровать результаты">Показать</button>
         </form>
       </section>
@@ -56,8 +74,8 @@
             <li><a href="">По цене</a></li>
             <li><a href="">По типу</a></li>
             <li><a href="">По рейтингу</a></li>
-            <li><a class="visually-hidden" href="">Вверх</a></li>
-            <li><a class="visually-hidden" href="">Вниз</a></li>
+            <li><a href=""><span class="visually-hidden">Вверх</span></a></li>
+            <li><a href=""><span class="visually-hidden">Вниз</span></a></li>
           </ul>
         </p>
       </section>

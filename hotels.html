@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -25,7 +28,7 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
-                <input type="checkbox" id="filer-pool" name="pool" checked aria-label="Наличие бассейна">
+                <input type="checkbox" id="filer-pool" name="pool" aria-label="Наличие бассейна" checked>
                 <label for="filer-pool">Бассейн</label>
               </li>
               <li>
@@ -42,7 +45,7 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li>
-                <input type="checkbox" checked id="filter-hotel" name="hotel">
+                <input type="checkbox" id="filter-hotel" name="hotel" checked>
                 <label for="filter-hotel">Гостиница</label>
               </li>
               <li>
@@ -50,7 +53,7 @@
                 <label for="filter-motel">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" checked id="filter-apart" name="apart">
+                <input type="checkbox" id="filter-apart" name="apart" checked>
                 <label for="filter-apart">Апартаменты</label>
               </li>
             </ul>
@@ -79,7 +82,7 @@
           </ul>
         </p>
       </section>
-      <section>
+      <section class="search-hotels">
         <h2 class="visually-hidden">Перечисление найденных гостиниц</h2>
         <ul>
           <li>
@@ -88,16 +91,16 @@
               <p>
                 <img src="img/amara_prew.jpg" width="135" height="90" alt="Amara Resort & Spa">
               </p>
-              <p>
+              <p class="indent-extra">
                 Гостиница
               </p>
-              <a href="">Подробнее</a>
-              <p>
+              <a href="" class="button-more">Подробнее</a>
+              <p class="indent-extra">
                 От 4000 р.
               </p>
-              <a href="">Забронировать</a>
+              <a href="" class="button-reserv">Забронировать</a>
               <div>
-                <span>5 звезд</span>
+                <span class="visually-hidden">5 звезд</span>
               </div>
               <p>
                 Рейтинг: 8,5
@@ -110,16 +113,16 @@
               <p>
                 <img src="img/desert_prew.jpg" width="135" height="90" alt="Desert Quali Inn">
               </p>
-              <p>
+              <p class="indent-extra">
                 Мотель
               </p>
-              <a href="">Подробнее</a>
-              <p>
+              <a href="" class="button-more">Подробнее</a>
+              <p class="indent-extra">
                 От 3000 р.
               </p>
-              <a href="">Забронировать</a>
+              <a href="" class="button-reserv">Забронировать</a>
               <div>
-                <span>3 звезды</span>
+                <span class="visually-hidden">3 звезды</span>
               </div>
               <p>
                 Рейтинг: 8,9
@@ -132,16 +135,16 @@
               <p>
                 <img src="img/villas_prew.jpg" width="135" width="90" alt="Villas at Poco Diablo">
               </p>
-              <p>
-                <span>Апартаменты</span>
+              <p class="indent-extra">
+                Апартаменты
               </p>
-              <a href="">Подробнее</a>
-              <p>
+              <a href="" class="button-more">Подробнее</a>
+              <p class="indent-extra">
                 От 2000 р.
               </p>
-              <a href="">Забронировать</a> 
+              <a href="" class="button-reserv">Забронировать</a> 
               <div>
-                <span>2 звезды</span>
+                <span class="visually-hidden">2 звезды</span>
               </div>
               <p>
                 Рейтинг: 9,2
@@ -151,19 +154,19 @@
         </ul>
       </section>
     </main>
-    <footer>
-        <p>
-          #VISITSEDONA
-        </p>
-        <div>
-          <ul>
-            <li><a href="#" aria-label="Седона в Twitter"><span class="visually-hidden">Twitter</span></a></li>
-            <li><a href="#" aria-label="Седона на Facebook"><span class="visually-hidden">Facebook</span></a></li>
-            <li><a href="#" aria-label="Седона на YouTube"><span class="visually-hidden">YouTube</span></a></li>
-          </ul>
-        </div>
-        <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademylogo.svg" width="114" height="40" alt="Логотип HTML Academy"></a></p>
-      </footer>
+    <footer class="main-footer">
+      <p class="visit-sedona">
+        #VISITSEDONA
+      </p>
+      <div class="footer-social">
+        <ul>
+          <li><a href="#" class="social-button" aria-label="Седона в Twitter"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a href="#" class="social-button" aria-label="Седона на Facebook"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a href="#" class="social-button" aria-label="Седона на YouTube"><span class="visually-hidden">YouTube</span></a></li>
+        </ul>
+      </div>
+      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademylogo.svg" width="114" height="40" alt="Логотип HTML Academy"></a></p>
+    </footer>
     </body>
   </html>
   

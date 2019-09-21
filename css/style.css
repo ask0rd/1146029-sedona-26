@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+a {
+    text-decoration: none;
+  }
+
+/* .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+*/
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+  
+   background-color: #ffffff;
+  }
+
+.site-navigation {
+      list-style: none;
+  }
+
+.site-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover {
+    color: #81b3d2;
+}
+
+.site-navigation a:focus {
+
+    color: #766357;
+}
+
+.indent-welcome {
+    font-size: 21px;
+}
+
+.indent-extra {
+    font-size: 14px;
+    color: #333333;
+}
+
+.indent-interested {
+    font-size: 30px;
+}
+
+.search-form {
+    font: inherit;
+    background-color: #ffffff;
+    
+}
+
+.search-form a {
+    color: #ffffff;
+}
+
+.arrival-date input {
+    font: inherit;
+  
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.arrival-date input:hover {
+    background-color: #ebebeb;
+    border: 0px;
+}
+
+.arrival-date input:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+}
+
+.departure-date input {
+    font: inherit;
+  
+    background-color: #f2f2f2;
+    border: 0px;
+}
+
+.departure-date input:hover {
+    background-color: #ebebeb;
+    border: 0px;
+}
+
+.departure-date input:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+}
+
+.adult-amount input {
+    font: inherit;
+  
+    background-color: #f2f2f2;
+    border: 0px;
+}
+
+.adult-amount input:hover {
+    background-color: #ebebeb;
+    border: 0px;
+}
+
+.adult-amount input:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+}
+
+.child-amount input {
+    font: inherit;
+  
+    background-color: #f2f2f2;
+    border: 0px;
+}
+
+.child-amount input:hover {
+    background-color: #ebebeb;
+    border: 0px;
+}
+
+.child-amount input:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+}
+
+.button-search {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    border: none;
+
+    background-color: #766357;
+}
+
+.button-search:hover {
+    background-color: #604e43;
+}
+
+.button-search:active {
+    background-color: #503e33;
+}
+
+.button-find {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    border: none;
+
+    background-color: #81b3d2;
+}
+
+.button-find:hover {
+    background-color: #669ec0;
+}
+
+.button-find:active {
+    background-color: #5496bd;
+}
+
+.button-more {
+    width: 106px;
+    height: 22px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    background-color: #81b3d2;
+}
+
+.button-more:hover {
+    background-color: #669ec0;
+}
+
+.button-more:active {
+    background-color: #5496bd;
+}
+
+.button-reserv {
+    width: 140px;
+    height: 22px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    background-color: #766357;
+}
+
+.button-reserv:hover {
+    background-color: #604e43;
+}
+
+.button-reserv:active {
+    background-color: #503e33;
+}
+
+.search-hotels a {
+    color: #ffffff;
+}
+
+.main-footer {
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+
+.footer-social {
+    text-align: center;
+}
+  
+  .footer-social ul {
+    list-style: none;
+}
+  
+  .social-button {
+    color: #000000;
+    background-color: #81b3d2;
+}
+
+.visit-sedona {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+/* .intro {
+    background-image: url("../img/intro.png"), url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 800px; 
+}
+
+
+.feature-list {
+    list-style: none;
+}
+
+.feature-list ul {
+    list-style: none;
+}
+
+.heading {
+    font-size: 21px;
+} */

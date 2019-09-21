@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -16,16 +19,16 @@
         <a><img src="img/logo.svg" width="138" height="70" alt="Логотип сайта туристического городка Седона"></a>
       </nav>
     </header>
-    <main>
+    <main class="intro">
       <h1 class="visually-hidden">Туристический городок "Седона"</h1>
       <section>
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-        <ul>
+        <p class="indent-welcome">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="indent-extra">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+        <ul class="feature-list">
           <li>
             <p>
-              <strong>Настоящий городок</strong>
+              <strong class="heading">Настоящий городок</strong>
             </p>
             <p>
               - №1 -
@@ -111,31 +114,31 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="search-form">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="hotels.html">Поиск гостиницы в Седоне</a>
+        <p class="indent-interested">Заинтересовались?</p>
+        <p class="indent-extra">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a href="hotels.html" class="button-search">Поиск гостиницы в Седоне</a>
         <form action="https://echo.htmlacademy.ru" method="POST">
-          <p>
+          <p class="arrival-date">
             <label for="arrival">Дата заезда:</label>
-            <input type="text" id ="arrival" name="arrival_date" value="" placeholder="24 апреля 2017" aria-label="Дата заезда">
-            <button type="button" aria-label="Выбор даты заезда в календаре"><span class="visually-hidden">Календарь</span></button>
+            <input type="text" id="arrival" name="arrival_date" value="" placeholder="24 апреля 2017" aria-label="Дата заезда">
+            <button type="button" class="button-calendar" aria-label="Выбор даты заезда в календаре"><span class="visually-hidden">Календарь</span></button>
           </p>
-          <p>
+          <p class="departure-date">
             <label for="departure">Дата выезда:</label>
             <input type="text" id="departure" name="departure_date" value="" placeholder="4 июля 2017" aria-label="Дата выезда">
-            <button type="button" aria-label="Выбор даты выезда в календаре"><span class="visually-hidden">Календарь</span></button>
+            <button type="button" class="button-calendar" aria-label="Выбор даты выезда в календаре"><span class="visually-hidden">Календарь</span></button>
           </p>
-          <p>
+          <p class="adult-amount">
             <label for="adult">Взрослые:</label>
-            <input type="number" id="adult" name="adult_amount" value="" placeholder="2" aria-label="Поле для выбора количества взрослых">
+            <button type="button" class="button-minus" aria-label="Убавить количество взрослых"><span class="visually-hidden">-</span></button><input type="number" id="adult" name="adult_amount" value="" placeholder="2" aria-label="Поле для выбора количества взрослых"><button type="button" class="button-plus" aria-label="Добавить количество взросё"><span class="visually-hidden">+</span></button>
           </p>
-          <p>
+          <p class="child-amount">
             <label for="child">Дети:</label>
-            <input type="number" id="child" name="child_amount" value="" placeholder="0" aria-label="Поле для выбора количества детей">
+            <button type="button" class="button-minus" aria-label="Убавить количество детей"><span class="visually-hidden">-</span></button><input type="number" id="child" name="child_amount" value="" placeholder="0" aria-label="Поле для выбора количества детей"><button type="button" class="button-plus" aria-label="Добавить количество детей"><span class="visually-hidden">+</span></button>
           </p>
-          <button type="submit" aria-label="Кнопка для поиска гостиниц">Найти</button>
+          <button type="submit" class="button-find" aria-label="Кнопка для поиска гостиниц">Найти</button>
         </form>
       </section>
       <section>
@@ -143,15 +146,15 @@
         <img src="img/map.jpg" width="1200" height="594" alt="Расположение Седоны на карте">
       </section>
     </main>
-    <footer>
-      <p>
+    <footer class="main-footer">
+      <p class="visit-sedona">
         #VISITSEDONA
       </p>
-      <div>
+      <div class="footer-social">
         <ul>
-          <li><a href="#" aria-label="Седона в Twitter"><span class="visually-hidden">Twitter</span></a></li>
-          <li><a href="#" aria-label="Седона на Facebook"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a href="#" aria-label="Седона на YouTube"><span class="visually-hidden">YouTube</span></a></li>
+          <li><a href="#" class="social-button" aria-label="Седона в Twitter"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a href="#" class="social-button" aria-label="Седона на Facebook"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a href="#" class="social-button" aria-label="Седона на YouTube"><span class="visually-hidden">YouTube</span></a></li>
         </ul>
       </div>
       <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademylogo.svg" width="114" height="40" alt="Логотип HTML Academy"></a></p>

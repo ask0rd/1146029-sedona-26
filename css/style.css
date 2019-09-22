@@ -51,7 +51,7 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.active-navigation {
+.site-navigation a.active-navigation {
     color: #766357;
 }
 
@@ -67,6 +67,7 @@ a {
     color: #333333;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
+    font-weight: 400;
     line-height: 26px;
     text-align: center;
     
@@ -79,6 +80,17 @@ a {
     line-height: 24px;
     text-align: center;
 }
+
+.title-hotel {
+    color: #333333;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
 
 .search-form {
     font: inherit;
@@ -207,6 +219,41 @@ a {
     background-color: #5496bd;
 }
 
+.button-hotel {
+    color: #000000;
+}
+
+.button-hotel:hover,
+.bitton-hotel:focus {
+    color: #81b3d2;
+}
+
+.button-hotel:active {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.search-hotels ul {
+    list-style: none;
+}
+
+.star {
+    background-image: url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg");
+    background-repeat: no-repeat;
+    padding-top: 20px; 
+}
+
+.star-four {
+    background-position: 0px, 23px, 46px, 69px;
+}
+
+.star-three {
+    background-position: 0px, 23px, 46px;
+}
+
+.star-two {
+    background-position: 0px, 23px;
+}
+
 .main-footer {
     background-color: #ffffff;
     opacity: 0.9;
@@ -244,7 +291,7 @@ a {
     text-transform: uppercase;
 }
 
-/* .intro {
+/*.intro {
     background-image: url("../img/intro.png"), url("../img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -262,4 +309,5 @@ a {
 
 .heading {
     font-size: 21px;
-} */
+}
+*/

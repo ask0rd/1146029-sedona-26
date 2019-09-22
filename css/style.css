@@ -237,20 +237,22 @@ a {
 }
 
 .star {
-    background-image: url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg");
     background-repeat: no-repeat;
     padding-top: 20px; 
 }
 
 .star-four {
+    background-image: url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg");
     background-position: 0px, 23px, 46px, 69px;
 }
 
 .star-three {
+    background-image: url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg");
     background-position: 0px, 23px, 46px;
 }
 
 .star-two {
+    background-image: url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg");
     background-position: 0px, 23px;
 }
 

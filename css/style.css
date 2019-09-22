@@ -18,14 +18,13 @@ a {
     text-decoration: none;
   }
 
-/* .visually-hidden {
+.visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
 }
-*/
 
 .main-navigation {
     font-size: 14px;
@@ -36,33 +35,49 @@ a {
   }
 
 .site-navigation {
-      list-style: none;
+    list-style: none;
   }
 
 .site-navigation a {
     color: #000000;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
     color: #81b3d2;
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
 
+.active-navigation {
     color: #766357;
 }
 
-.indent-welcome {
+.title-welcome {
+    color: #000000;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 21px;
+    line-height: 26px;
+    text-align: center;
 }
 
-.indent-extra {
-    font-size: 14px;
+.title-extra {
     color: #333333;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    
 }
 
-.indent-interested {
+.title-interested {
+    color: #333333;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 30px;
+    line-height: 24px;
+    text-align: center;
 }
 
 .search-form {
@@ -71,20 +86,17 @@ a {
     
 }
 
-.search-form a {
-    color: #ffffff;
-}
-
 .arrival-date input {
     font: inherit;
-  
+    text-transform: uppercase;
+
     background-color: #f2f2f2;
     border: none;
 }
 
 .arrival-date input:hover {
     background-color: #ebebeb;
-    border: 0px;
+    border: none;
 }
 
 .arrival-date input:focus {
@@ -94,14 +106,15 @@ a {
 
 .departure-date input {
     font: inherit;
+    text-transform: uppercase;
   
     background-color: #f2f2f2;
-    border: 0px;
+    border: none;
 }
 
 .departure-date input:hover {
     background-color: #ebebeb;
-    border: 0px;
+    border: none;
 }
 
 .departure-date input:focus {
@@ -111,14 +124,15 @@ a {
 
 .adult-amount input {
     font: inherit;
+    text-transform: uppercase;
   
     background-color: #f2f2f2;
-    border: 0px;
+    border: none;
 }
 
 .adult-amount input:hover {
     background-color: #ebebeb;
-    border: 0px;
+    border: none;
 }
 
 .adult-amount input:focus {
@@ -128,14 +142,15 @@ a {
 
 .child-amount input {
     font: inherit;
+    text-transform: uppercase;
   
     background-color: #f2f2f2;
-    border: 0px;
+    border: none;
 }
 
 .child-amount input:hover {
     background-color: #ebebeb;
-    border: 0px;
+    border: none;
 }
 
 .child-amount input:focus {
@@ -143,10 +158,8 @@ a {
     border: 2px solid #e5e5e5;
 }
 
-.button-search {
+.button {
     font-family: "PT Sans", Arial, sans-serif;
-    font-size: 21px;
-    line-height: 26px;
     font-weight: 700;
     text-align: center;
     color: #ffffff;
@@ -154,89 +167,44 @@ a {
     text-transform: uppercase;
 
     border: none;
-
-    background-color: #766357;
 }
 
-.button-search:hover {
-    background-color: #604e43;
-}
-
-.button-search:active {
-    background-color: #503e33;
-}
-
-.button-find {
-    font-family: "PT Sans", Arial, sans-serif;
+.button-large {
     font-size: 21px;
     line-height: 26px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-    text-transform: uppercase;
-
-    border: none;
-
-    background-color: #81b3d2;
 }
 
-.button-find:hover {
-    background-color: #669ec0;
-}
-
-.button-find:active {
-    background-color: #5496bd;
-}
-
-.button-more {
-    width: 106px;
-    height: 22px;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-    font-family: "PT Sans";
+.button-small {
     font-size: 14px;
-    font-weight: 700;
     line-height: 21px;
-    text-transform: uppercase;
-
-    background-color: #81b3d2;
 }
 
-.button-more:hover {
-    background-color: #669ec0;
-}
-
-.button-more:active {
-    background-color: #5496bd;
-}
-
-.button-reserv {
-    width: 140px;
-    height: 22px;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-    font-family: "PT Sans";
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-    text-transform: uppercase;
-
+.button-brown {
     background-color: #766357;
 }
 
-.button-reserv:hover {
+.button-brown:hover,
+.button-brown:focus {
     background-color: #604e43;
 }
 
-.button-reserv:active {
+.button-brown:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: #503e33;
 }
 
-.search-hotels a {
-    color: #ffffff;
+.button-blue {
+    background-color: #81b3d2;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+    background-color: #669ec0;
+}
+
+.button-blue:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
 }
 
 .main-footer {
@@ -248,13 +216,23 @@ a {
     text-align: center;
 }
   
-  .footer-social ul {
+.footer-social ul {
     list-style: none;
 }
   
-  .social-button {
+.social-button {
     color: #000000;
     background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #669ec0;
+}
+
+.social-button:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #5496bd;
 }
 
 .visit-sedona {

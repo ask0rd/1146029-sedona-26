@@ -366,7 +366,7 @@ body {
 .header-logo {
     display: block;
 
-    margin-left: 530px;
+    margin: auto;
     width: 138px;
     height: 70px;
 }

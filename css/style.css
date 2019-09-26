@@ -59,7 +59,7 @@ a {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    margin-top: -60px;
+    margin-top: -58px;
   }
 
 .site-navigation a {
@@ -85,12 +85,16 @@ a {
     margin: 0 auto;
 }
 
+.site-navigation-item:nth-child(3) {
+    padding-left: 84px;
+}
+
 .site-navigation-item:nth-child(1) {
-    padding-left: 72px;
+    padding-left: 71px;
 }
 
 .site-navigation-item:nth-child(4) {
-    padding-right: 72px;
+    padding-right: 71px;
 }
 
 .site-navigation-item:nth-child(3),
@@ -173,9 +177,16 @@ a {
 
 
 .search-form {
+    text-align: center;
     font: inherit;
     background-color: #ffffff;
     
+}
+
+.form-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .arrival-date input {

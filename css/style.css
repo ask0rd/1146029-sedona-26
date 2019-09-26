@@ -17,6 +17,12 @@ a {
     text-decoration: none;
   }
 
+.container-body {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -25,16 +31,35 @@ a {
     margin: -1px;
 }
 
+.header-logo {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 138px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.main-header {
+    margin-bottom: 70px;
+}
+
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
     color: #000000;
   
-   /* background-color: #ffffff; */
+    background-color: #ffffff;
+
+
   }
 
 .site-navigation {
+    display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: -60px;
   }
 
 .site-navigation a {
@@ -52,6 +77,26 @@ a {
 
 .site-navigation a.active-navigation {
     color: #766357;
+}
+
+.site-navigation-item {
+    width: 300px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.site-navigation-item:nth-child(1) {
+    padding-left: 72px;
+}
+
+.site-navigation-item:nth-child(4) {
+    padding-right: 72px;
+}
+
+.site-navigation-item:nth-child(3),
+.site-navigation-item:nth-child(4) {
+    text-align: right;
+
 }
 
 .title-welcome {
@@ -88,6 +133,42 @@ a {
     line-height: 21px;
     text-transform: uppercase;
     text-align: left;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-list ul {
+    list-style: none;
+}
+
+.feature-list-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-description {
+    width: 400px;
+    padding: 0;
+    text-align: center;
+}
+
+.feature-img {
+    width: 800px;
+}
+
+.feature-extra {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -316,57 +397,9 @@ a {
 }
 
 
-.feature-list {
-    list-style: none;
-}
-
-.feature-list ul {
-    list-style: none;
-}
-
 .heading {
     font-size: 21px;
 }
 */
 
 /* Разметка сетки */
-
-html,
-body {
-    min-width: 1200px;
-    min-height: 2800px;
-}
-
-body {
-    background-image: url("../img/sedona-index.jpg");
-    background-size: 1280px auto;;
-    background-repeat: no-repeat;
-}
-
-.main-header {
-    margin-bottom: 552px;
-
-    /* */
-    min-height: 70px;
-}
-
-.main-navigation {
-
-    min-height: 70px;
-}
-
-.site-navigation {
-    margin: auto;
-    padding: 0;
-    width: 1200px;
-
-    height: 56px;
-}
-
-.header-logo {
-    display: block;
-
-    margin: auto;
-    width: 138px;
-    height: 70px;
-}

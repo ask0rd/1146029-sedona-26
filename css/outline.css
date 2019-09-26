@@ -1,4 +1,4 @@
-.main-header {
+.container-body {
     background-color: rgba(255, 239, 10, 0.323);
     outline: 1px solid rgba(255, 239, 10);
 }
@@ -13,14 +13,19 @@
     outline: 1px solid rgba(10, 241, 87);
 }
 
-.menu-left {
+.main-navigation-wrapper {
     background-color: rgba(241, 10, 241, 0.288);
     outline: 1px solid rgba(241, 10, 241);
 }
 
-.menu-right {
-    background-color: rgba(255, 0, 0, 0.781);
+.menu-navigation {
+    background-color: rgba(0, 255, 55, 0.514);
     outline: 1px solid rgba(255, 0, 0);
+}
+
+.menu-navigation-right {
+    background-color: rgba(17, 226, 139, 0.226);
+    outline: 1px solid rgba(17, 226, 139);
 }
 
 .header-logo{
@@ -28,10 +33,6 @@
     outline: 1px solid rgba(255, 0, 0);
 }
 
-.benefits-reason {
-    background-color: rgba(17, 226, 139, 0.226);
-    outline: 1px solid rgba(17, 226, 139);
-}
 
 .benefits-reason__inner {
     background-color: rgba(238, 60, 6, 0.226);

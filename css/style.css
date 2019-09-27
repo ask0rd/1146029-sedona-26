@@ -38,7 +38,7 @@ a {
     background-size: 100%;
     width: 1200px;
     height: 800px;
-    margin-top: -150px;
+    margin-top: -80px;
     position: relative;
     z-index: -1;
 }
@@ -75,9 +75,9 @@ a {
     margin: 0 auto;
 }
 
-.main-header {
+/* .main-header {
     margin-bottom: 70px;
-}
+} */
 
 .main-navigation {
     font-size: 14px;
@@ -459,7 +459,14 @@ a {
     width: 100%;
 } */
 
+
+.search-hotels {
+    padding: 0;
+    background-color: #ffffff;
+}
+
 .search-hotels ul {
+    margin: 0 auto;
     list-style: none;
 }
 

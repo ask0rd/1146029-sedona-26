@@ -6,9 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="css/outline.css" rel="stylesheet"> -->
   </head>
-  <body class="container-body">
+  <body>
+    <div class="container-body">
     <header class="main-header">
       <nav class="main-navigation">
         <div class="header-logo"><a><img src="img/logo.svg" width="138" height="70" alt="Логотип сайта туристического городка Седона"></a></div>
@@ -26,6 +26,7 @@
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p class="title-welcome">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="title-extra">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+        <!--  ВТОРАЯ ЧАСТЬ ЗАДАНИЯ
         <ul class="feature-list">
           <li class="feature-list-item">
             <div class="feature-description">
@@ -125,6 +126,7 @@
           </li>
         </ul>
       </section>
+      < -->
       <section class="search-form">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
         <p class="title-interested">Заинтересовались?</p>
@@ -141,14 +143,18 @@
             <input type="text" id="departure" name="departure_date" value="" placeholder="4 июля 2017" aria-label="Дата выезда">
             <button type="button" class="button-calendar" aria-label="Выбор даты выезда в календаре"><span class="visually-hidden">Календарь</span></button>
           </p>
-          <div class="form-item-button">
+          <div class="form-item-line">
           <p class="adult-amount">
             <label for="adult">Взрослые:</label>
-            <button type="button" class="button-minus" aria-label="Убавить количество взрослых"><span class="visually-hidden">-</span></button><input type="number" id="adult" name="adult_amount" value="" placeholder="2" aria-label="Поле для выбора количества взрослых"><button type="button" class="button-plus" aria-label="Добавить количество взросё"><span class="visually-hidden">+</span></button>
+            <span class="adult-input">
+            <button type="button" class="button-minus" aria-label="Убавить количество взрослых"><span class="visually-hidden">-</span></button><input type="number" id="adult" name="adult_amount" value="" placeholder="2" aria-label="Поле для выбора количества взрослых"><button type="button" class="button-plus" aria-label="Добавить количество взрослых"><span class="visually-hidden">+</span></button>
+            </span>
           </p>
           <p class="child-amount">
             <label for="child">Дети:</label>
-            <button type="button" class="button-minus" aria-label="Убавить количество детей"><span class="visually-hidden">-</span></button><input type="number" id="child" name="child_amount" value="" placeholder="0" aria-label="Поле для выбора количества детей"><button type="button" class="button-plus" aria-label="Добавить количество детей"><span class="visually-hidden">+</span></button>
+            <span class="adult-input">
+              <button type="button" class="button-minus" aria-label="Убавить количество детей"><span class="visually-hidden">-</span></button><input type="number" id="child" name="child_amount" value="" placeholder="0" aria-label="Поле для выбора количества детей"><button type="button" class="button-plus" aria-label="Добавить количество детей"><span class="visually-hidden">+</span></button>
+            </span>
           </p>
           </div>
           <button type="submit" class="button button-large button-blue" aria-label="Кнопка для поиска гостиниц">Найти</button>
@@ -164,13 +170,14 @@
         #VISITSEDONA
       </p>
       <div class="footer-social">
-        <ul>
+        <ul class="social-icon">
           <li><a href="#" class="social-button" aria-label="Седона в Twitter"><div><span class="visually-hidden">Twitter</span></div></a></li>
           <li><a href="#" class="social-button" aria-label="Седона на Facebook"><div><span class="visually-hidden">Facebook</span></div></a></li>
           <li><a href="#" class="social-button" aria-label="Седона на YouTube"><div><span class="visually-hidden">YouTube</span></div></a></li>
         </ul>
       </div>
-      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademylogo.svg" width="114" height="40" alt="Логотип HTML Academy"></a></p>
+      <p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademylogo.svg" width="114" height="40" alt="Логотип HTML Academy"></a></p>
     </footer>
+    </div>
   </body>
 </html>

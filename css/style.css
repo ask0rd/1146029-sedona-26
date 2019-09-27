@@ -8,7 +8,7 @@ body {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     background-position: top center;
     background-repeat: no-repeat;
   }
@@ -31,6 +31,41 @@ a {
     margin: -1px;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/bg.jpg");
+    background-size: 100%;
+    width: 1200px;
+    height: 800px;
+    margin-top: -150px;
+    position: relative;
+    z-index: -1;
+}
+
+.welcome-img {
+    display: block;
+    background-image: url("../img/intro.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 457px;
+    height: 352px;
+    margin: 0 auto;
+    margin-top: 159px;
+
+}
+
+.polygon-img {
+    display: block;
+    background-image: url("../img/polygon.png");
+    background-size: 100%;
+    width: 1200px;
+    height: 57px;
+    margin: 0 auto;
+    margin-top: 23px;
+
+}
+
 .header-logo {
     display: block;
     position: relative;
@@ -50,14 +85,13 @@ a {
     color: #000000;
   
     background-color: #ffffff;
-
-
-  }
+}
 
 .site-navigation {
     display: flex;
     list-style: none;
     padding: 0;
+    padding-bottom: 15px;
     margin: 0 auto;
     margin-top: -58px;
   }
@@ -101,6 +135,12 @@ a {
 .site-navigation-item:nth-child(4) {
     text-align: right;
 
+}
+
+.feature {
+    background-color: #ffffff;
+    padding-top: 50px;
+    margin-top: -209px;
 }
 
 .title-welcome {

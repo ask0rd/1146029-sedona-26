@@ -11,7 +11,7 @@
     <div class="container-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <div class="header-logo"><a><img src="img/logo.svg" width="138" height="70" alt="Логотип сайта туристического городка Седона"></a></div>
+        <a class="header-logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип сайта туристического городка Седона"></a>
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="info.html">Информация</a></li>
           <li class="site-navigation-item"><a href="#">Фото и видео</a></li>
@@ -21,15 +21,12 @@
       </nav>
     </header>
     <main>
-      <div class="intro">
-        <div class="welcome-img"></div>
-        <div class="polygon-img"></div>
-      </div>
-      <h1 class="visually-hidden">Туристический городок "Седона"</h1>
+      <h1 class="visually-hidden intro"><span class="visually-hidden">Туристический городок "Седона"</span></h1>
       <section class="feature">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <p class="title-welcome">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="title-extra">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+        <p class="title title-main">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!
+        </p>
+        <p class="title title-extra">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         <!--  ВТОРАЯ ЧАСТЬ ЗАДАНИЯ
         <ul class="feature-list">
           <li class="feature-list-item">
@@ -131,46 +128,45 @@
         </ul>
       </section>
       < -->
-      <section class="search-form">
+      <section class="search-hotel">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
-        <p class="title-interested">Заинтересовались?</p>
-        <p class="title-extra">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="hotels.html" class="button button-large button-brown">Поиск гостиницы в Седоне</a>
-        <form class="form-item" action="https://echo.htmlacademy.ru" method="POST">
-          <p class="arrival-date">
+        <p class="title title-interested">Заинтересовались?</p>
+        <p class="title title-extra">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a href="hotels.html" class="button button-large button-brown button-search-hotel">Поиск гостиницы в Седоне</a>
+        <div class="hidden-form">
+          <form class="hotel-form-search" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="form-item">
             <label for="arrival">Дата заезда:</label>
             <input type="text" id="arrival" name="arrival_date" value="" placeholder="24 апреля 2017" aria-label="Дата заезда">
             <button type="button" class="button-calendar" aria-label="Выбор даты заезда в календаре"><span class="visually-hidden">Календарь</span></button>
           </p>
-          <p class="departure-date">
+          <p class="form-item">
             <label for="departure">Дата выезда:</label>
             <input type="text" id="departure" name="departure_date" value="" placeholder="4 июля 2017" aria-label="Дата выезда">
             <button type="button" class="button-calendar" aria-label="Выбор даты выезда в календаре"><span class="visually-hidden">Календарь</span></button>
           </p>
           <div class="form-item-line">
-          <p class="adult-amount">
+          <p class="form-item">
             <label for="adult">Взрослые:</label>
             <span class="adult-input">
             <button type="button" class="button-minus" aria-label="Убавить количество взрослых"><span class="visually-hidden">-</span></button><input type="number" id="adult" name="adult_amount" value="" placeholder="2" aria-label="Поле для выбора количества взрослых"><button type="button" class="button-plus" aria-label="Добавить количество взрослых"><span class="visually-hidden">+</span></button>
             </span>
           </p>
-          <p class="child-amount">
+          <p class="form-item">
             <label for="child">Дети:</label>
             <span class="adult-input">
               <button type="button" class="button-minus" aria-label="Убавить количество детей"><span class="visually-hidden">-</span></button><input type="number" id="child" name="child_amount" value="" placeholder="0" aria-label="Поле для выбора количества детей"><button type="button" class="button-plus" aria-label="Добавить количество детей"><span class="visually-hidden">+</span></button>
             </span>
           </p>
           </div>
-          <button type="submit" class="button button-large button-blue" aria-label="Кнопка для поиска гостиниц">Найти</button>
+          <button type="submit" class="button button-large button-blue button-search" aria-label="Кнопка для поиска гостиниц">Найти</button>
         </form>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Расположение Седоны на карте</h2>
         <img src="img/map.jpg" width="1200" height="594" alt="Расположение Седоны на карте">
+      </div>
       </section>
     </main>
     <footer class="main-footer">
-      <p class="visit-sedona">
+      <p class="title-main">
         #VISITSEDONA
       </p>
       <div class="footer-social">
@@ -180,7 +176,7 @@
           <li><a href="#" class="social-button" aria-label="Седона на YouTube"><div><span class="visually-hidden">YouTube</span></div></a></li>
         </ul>
       </div>
-      <p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademylogo.svg" width="114" height="40" alt="Логотип HTML Academy"></a></p>
+      <p class="footer-copyright"><span class="copyright-indent">Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademylogo.svg" width="114" height="40" alt="Логотип HTML Academy"></a></p>
     </footer>
     </div>
   </body>

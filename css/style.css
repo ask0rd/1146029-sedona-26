@@ -406,10 +406,9 @@ input::-webkit-inner-spin-button {
     position: relative;
     margin-top: 86px;
     padding: 0;
-    padding: 0px 42px 0px 42px;
+    padding: 0px 0px 0px 0px;
     background-color: #ffffff;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .search-result ul {
@@ -419,8 +418,10 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-card {
-    padding: 25px 30px 21px 30px;
+    padding: 25px 72px 22px 72px;
     display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .hotel-card h3 {
@@ -437,8 +438,7 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-img {
-    margin: 0 0 0 0;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
 }
 
 .hotel-card-item {

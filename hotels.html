@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <div class="header-logo"><a href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип сайта туристического городка Седона"></a></div>
+        <a class="header-logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип сайта туристического городка Седона"></a>
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="info.html">Информация</a></li>
           <li class="site-navigation-item"><a href="#">Фото и видео</a></li>
@@ -92,113 +91,106 @@
           </ul>
         </p>
        </section> -->
-      <section class="search-hotels">
+      <section class="search-result">
         <h2 class="visually-hidden">Перечисление найденных гостиниц</h2>
         <ul>
           <li>
             <article class="hotel-card">
-              <h3 class="visually-hidden">Amara Resort & Spa</h3>
-              <div class="hotel-info">
-                <p>
-                  <img src="img/amara_prew.jpg" width="135" height="90" alt="Amara Resort & Spa">
-                </p>
-                <div class="hotel-card-item">
-                  <a href="" class="button button-large button-hotel">Amara Resort & Spa</a>
-                  <div class="hotel-type">
-                  <p class="title-hotel">
-                    Гостиница
-                  </p>
-                  <a href="" class="button button-small button-blue">Подробнее</a>
-                  </div>
-                  <div class="hotel-type">
-                  <p class="title-hotel">
-                    От 4000 р.
-                  </p>
-                  <a href="" class="button button-small button-brown">Забронировать</a>
-                  </div>
-                </div>
+              <p class="hotel-img">
+                <img src="img/amara_prew.jpg" width="135" height="90" alt="Amara Resort & Spa">
+              </p>
+              <div class="hotel-card-item">
+              <h3><a href="" class="button button-large button-hotel">Amara Resort & Spa</a></h3>
+              <div>
+              <p class="title-hotel">
+                Гостиница
+              </p>
+              <a href="" class="button button-small button-blue">Подробнее</a>
+            </div>
+            <div>
+              <p class="title-hotel">
+                От 4000 р.
+              </p>
+              <a href="" class="button button-small button-brown button-hotel-reserve">Забронировать</a>
+              </div>
               </div>
               <div class="hotel-card-rate">
                 <div class="star star-four">
                   <span class="visually-hidden">4 звезды</span>
                 </div>
-                <p class="rating">
+                <p class="hotel-rating">
                   Рейтинг: 8,5
                 </p>
               </div>
+              <div class="hotel-card-border"></div>
             </article>
           </li>
           <li>
             <article class="hotel-card">
-              <h3 class="visually-hidden">Desert Quali Inn</h3>
-              <div class="hotel-info">
-                <p>
-                  <img src="img/desert_prew.jpg" width="135" height="90" alt="Desert Quali Inn">
-                </p>
-                <div class="hotel-card-item">
-                  <a href="" class="button button-large button-hotel">Desert Quali Inn</a>
-                  <div class="hotel-type">
+              <p class="hotel-img">
+                <img src="img/desert_prew.jpg" width="135" height="90" alt="Desert Quali Inn">
+              </p>
+              <div class="hotel-card-item">
+                <h3><a href="" class="button button-large button-hotel">Desert Quali Inn</a></h3>
+                <div>
                   <p class="title-hotel">
                     Мотель
                   </p>
                   <a href="" class="button button-small button-blue">Подробнее</a>
-                  </div>
-                  <div class="hotel-type">
+                </div>
+                <div>
                   <p class="title-hotel">
                     От 3000 р.
                   </p>
                   <a href="" class="button button-small button-brown">Забронировать</a>
-                  </div>
                 </div>
               </div>
               <div class="hotel-card-rate">
                 <div class="star star-three">
                   <span class="visually-hidden">3 звезды</span>
                 </div>
-                <p class="rating">
+                <p class="hotel-rating">
                   Рейтинг: 8,9
                 </p>
               </div>
+              <div class="hotel-card-border"></div>
             </article>
           </li>
           <li>
             <article class="hotel-card">
-              <h3 class="visually-hidden">Villas at Poco Diablo</h3>
-              <div class="hotel-info">
-                <p>
+                <p class="hotel-img title-hotel-card">
                   <img src="img/villas_prew.jpg" width="135" width="90" alt="Villas at Poco Diablo">
                 </p>
                 <div class="hotel-card-item">
-                  <a href="" class="button button-large button-hotel">Villas at Poco Diablo</a>
-                  <div class="hotel-type">
-                  <p class="title-hotel">
-                    Апартаменты
-                  </p>
-                  <a href="" class="button button-small button-blue">Подробнее</a>
+                  <h3><a href="" class="button button-large button-hotel">Villas at Poco Diablo</a></h3>
+                  <div>
+                    <p class="title-hotel">
+                      Апартаменты
+                    </p>
+                    <a href="" class="button button-small button-blue">Подробнее</a>
                   </div>
-                  <div class="hotel-type">
+                  <div>
                     <p class="title-hotel">
                       От 2000 р.
                     </p>
                     <a href="" class="button button-small button-brown">Забронировать</a> 
                   </div>
                 </div>
-              </div>
-              <div class="hotel-card-rate">
-                <div class="star star-two">
-                  <span class="visually-hidden">2 звезды</span>
+                <div class="hotel-card-rate">
+                  <div class="star star-two">
+                    <span class="visually-hidden">2 звезды</span>
+                  </div>
+                  <p class="hotel-rating">
+                    Рейтинг: 9,2
+                  </p>
                 </div>
-              <p class="rating">
-                Рейтинг: 9,2
-              </p>
-            </div>
-            </article>
-          </li>
+              </article>
+            </li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
-        <p class="visit-sedona">
+        <p class="title-main">
           #VISITSEDONA
         </p>
         <div class="footer-social">
@@ -208,7 +200,7 @@
             <li><a href="#" class="social-button" aria-label="Седона на YouTube"><div><span class="visually-hidden">YouTube</span></div></a></li>
           </ul>
         </div>
-        <p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademylogo.svg" width="114" height="40" alt="Логотип HTML Academy"></a></p>
+        <p class="footer-copyright"><span class="copyright-indent">Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademylogo.svg" width="114" height="40" alt="Логотип HTML Academy"></a></p>
       </footer>
       </div>
     </body>

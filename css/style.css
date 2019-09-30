@@ -161,6 +161,9 @@ a {
     line-height: 21px;
     text-transform: uppercase;
     text-align: left;
+    margin: 0 0 0 0;
+    margin-top: -5px;
+    margin-bottom: 15px;
 }
 
 /* .feature-list {
@@ -298,6 +301,7 @@ input::-webkit-inner-spin-button {
 .button-small {
     font-size: 14px;
     line-height: 21px;
+    padding: 5px 17px 4px 17px;
 }
 
 .button-brown {
@@ -398,45 +402,59 @@ input::-webkit-inner-spin-button {
 } */
 
 
-.search-hotels {
+.search-result {
+    position: relative;
+    margin-top: 86px;
     padding: 0;
+    padding: 0px 42px 0px 42px;
     background-color: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.search-hotels ul {
+.search-result ul {
+    padding: 0;
     margin: 0 auto;
     list-style: none;
 }
 
 .hotel-card {
+    padding: 25px 30px 21px 30px;
     display: flex;
-    justify-content: space-between;
+}
+
+.hotel-card h3 {
+    margin: 0 0 0 0;
+}
+
+.hotel-card-border {
+    position: absolute;
+    width: 1200px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    right: 0%;
+    margin-top: 125px;
+}
+
+.hotel-img {
+    margin: 0 0 0 0;
+    margin-top: 5px;
 }
 
 .hotel-card-item {
     display: flex;
-    padding-left: 30px;
-    padding-bottom: -10px;
-    width: 288px;
     flex-wrap: wrap;
-}
-
-.hotel-info {
-    display: flex;
-    padding-left: 30px;
+    justify-content: space-between;
+    margin-left: 30px;
+    width: 258px;
 }
 
 .hotel-card-rate {
-    padding-right: 70px;
-}
-
-.hotel-type {
     display: flex;
+    margin-left: auto;
     flex-direction: column;
-    width: 110px;
-    padding-right: 6px;
+    justify-content: space-between;
 }
-
 
 .star {
     display: flex;
@@ -463,9 +481,9 @@ input::-webkit-inner-spin-button {
     background-position: 92px, 69px;
 }
 
-.rating {
+.hotel-rating {
     width: 111px;
-    height: 22px;
+    height: 23px;
     color: #666666;
     background-color: #f2f2f2;
     font-family: "PT Sans";
@@ -474,6 +492,7 @@ input::-webkit-inner-spin-button {
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 12px;
 }
 
 .main-footer {
@@ -482,7 +501,6 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     background-color: #ffffff;
     opacity: 0.9;
-    height: 120px;;
     align-items: center;
 }
   
@@ -490,9 +508,8 @@ input::-webkit-inner-spin-button {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding: 33px 0px 33px 0px;
     margin: 0;
-
     width: 400px;
 }
 

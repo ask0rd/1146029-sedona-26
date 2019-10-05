@@ -20,61 +20,49 @@
       </nav>
     </header>
     <main>
-      <!-- ВТОРАЯ ЧАСТЬ ЗАДАНИЯ
         <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>  
       <section>
         <h2 class="visually-hidden">Подбор гостиниц с установленными параметрами</h2>
-        <form class="form-filter" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="form-filter-checkbox">
-          <fieldset>
-            <div class="chekbox-align">
-            <legend>Инфраструктура:</legend>
+        <form class="hotel-filter" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="filter-field">
+            <legend class="title-filter title-white">Инфраструктура:</legend>
             <ul>
-              <li>
+              <li class="filter-line">
                 <input type="checkbox" id="filer-pool" name="pool" aria-label="Наличие бассейна" checked>
-                <label for="filer-pool">Бассейн</label>
+                <label class="title-extra title-white" for="filer-pool">Бассейн</label>
               </li>
-              <li>
+              <li class="filter-line">
                 <input type="checkbox" id="filer-parking" name="parking" aria-label="Наличие парковки">
-                <label for="filer-parking">Парковка</label>
+                <label class="title-extra title-white" for="filer-parking">Парковка</label>
               </li>
-              <li>
+              <li class="filter-line">
                 <input type="checkbox" id="filer-wifi" name="wifi" aria-label="Наличие Wi-Fi">
-                <label for="filer-wifi">Wi-Fi</label>
+                <label class="title-extra title-white" for="filer-wifi">Wi-Fi</label>
               </li>
             </ul>
-            </div>
           </fieldset>
-          <fieldset class="fieldset-align">
-            <div class="chekbox-align">
-            <legend>Тип жилья:</legend>
+          <fieldset class="filter-field">
+            <legend class="title-filter title-white">Тип жилья:</legend>
             <ul>
-              <li>
+              <li class="filter-line">
                 <input type="checkbox" id="filter-hotel" name="hotel" checked>
-                <label for="filter-hotel">Гостиница</label>
+                <label class="title-extra title-white" for="filter-hotel">Гостиница</label>
               </li>
-              <li>
+              <li class="filter-line">
                 <input type="checkbox" id="filter-motel" name="motel" checked>
-                <label for="filter-motel">Мотель</label>
+                <label class="title-extra title-white" for="filter-motel">Мотель</label>
               </li>
-              <li>
+              <li class="filter-line">
                 <input type="checkbox" id="filter-apart" name="apart" checked>
-                <label for="filter-apart">Апартаменты</label>
+                <label class="title-extra title-white" for="filter-apart">Апартаменты</label>
               </li>
             </ul>
-            </div>
           </fieldset>
-          </div>
-          <div class="form-filter-input">
-          <p class="filter-input">
-            Стоимость в сутки (Р):
-            <label for="min price">От</label>
+          <p class="title-filter title-white filter-cost">Стоимость в сутки (Р):
             <input type="text" id="min_price" name="low_cost" placeholder="От 0" aria-label="Стоимость в сутки от введенной суммы">
-            <label for="max price">До</label>
             <input type="text" id="max_price" name="high_cost" placeholder="До 3000" aria-label="Стоимость в сутки до введенной суммы">
+            <button class="filter-button" type="submit" aria-label="Отфильтровать результаты">Показать</button>
           </p>
-          <button type="submit" aria-label="Отфильтровать результаты">Показать</button>
-          </div>
         </form>
       </section>
       <section class="hotels-found">
@@ -90,7 +78,7 @@
             <li><a href=""><span class="visually-hidden">Вниз</span></a></li>
           </ul>
         </p>
-       </section> -->
+       </section>
       <section class="search-result">
         <h2 class="visually-hidden">Перечисление найденных гостиниц</h2>
         <ul>
@@ -188,7 +176,7 @@
       </section>
     </main>
     <footer class="main-footer">
-        <p class="title-main">
+        <p class="title">
           #VISITSEDONA
         </p>
         <div class="footer-social">

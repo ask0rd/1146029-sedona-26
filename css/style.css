@@ -583,14 +583,16 @@ input::-webkit-inner-spin-button {
     color: #ffffff;
     font-weight: 400;
     padding: 6px 33px 6px 64px;
+    width: 320px;
+    justify-content: space-between;
 }
 
 .filter-cost-input {
     color: #ffffff;
 }
 
-.input-min-price {
-    margin-right: 76px;
+/* .input-min-price {
+    margin-right: 76px; */
 }
 
 .filter-cost-input::after {

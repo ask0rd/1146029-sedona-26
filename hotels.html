@@ -58,11 +58,20 @@
               </li>
             </ul>
           </fieldset>
-          <p class="title-filter title-white filter-cost">Стоимость в сутки (Р):
-            <input type="number" id="min_price" name="low_cost" placeholder="От 0" aria-label="Стоимость в сутки от введенной суммы">
-            <input type="number" id="max_price" name="high_cost" placeholder="До 3000" aria-label="Стоимость в сутки до введенной суммы">
+          <div class="filter-cost">
+          <p class="title-filter title-white">Стоимость в сутки (Р):</p>
+            <div class="price-input">
+              <div class="filter-cost-input">
+                <label for="min-price">От</label>
+                <input class="input-min-price" type="number" id="min-price" name="low_cost" placeholder="0" aria-label="Стоимость в сутки от введенной суммы">
+              </div>
+              <div class="filter-cost-input">
+                <label for="max-price">До</label>
+                <input type="number" id="max-price" name="high_cost" placeholder="3000" aria-label="Стоимость в сутки до введенной суммы">
+              </div>
+            </div>
             <button class="filter-button" type="submit" aria-label="Отфильтровать результаты">Показать</button>
-          </p>
+          </div>
         </form>
       </section>
       <section class="hotel-sorting">

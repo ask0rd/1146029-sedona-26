@@ -569,31 +569,46 @@ input::-webkit-inner-spin-button {
 .hotel-filter {
     background-image: url("../img/filter_background.jpg");
     background-position: center center;
-    padding: 26px 60px 18px 55px;
+    padding: 26px 72px 18px 55px;
     display: flex;
-    justify-content: space-between;
 }
 
 .filter-cost {
-    width: 329px;
+    margin-left: auto;
+}
+
+.price-input {
+    border: 2px solid #ffffff; 
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 0 auto;
-}
-
-.filter-cost input {
     color: #ffffff;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    height: 34px;;
-    margin-top: -25px;
-    width: 159px;
+    font-weight: 400;
+    padding: 6px 33px 6px 64px;
 }
 
-.filter-cost input::-webkit-input-placeholder { 
+.filter-cost-input {
+    color: #ffffff;
+}
+
+.input-min-price {
+    margin-right: 76px;
+}
+
+.filter-cost-input::after {
+    display: block;
+    height: 20px;
+    width: 2px;
+    color: #ffffff;
+}
+
+.price-input input {
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    width: 50px;
+}
+
+.price-input input::-webkit-input-placeholder { 
     color: #ffffff; 
 }
 

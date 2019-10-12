@@ -571,6 +571,7 @@ input::-webkit-inner-spin-button {
     background-position: center center;
     padding: 26px 72px 18px 55px;
     display: flex;
+    position: relative;
 }
 
 .filter-cost {
@@ -582,6 +583,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     color: #ffffff;
     font-weight: 400;
+    margin-top: 10px;
     padding: 6px 33px 6px 64px;
     width: 320px;
     justify-content: space-between;
@@ -591,15 +593,19 @@ input::-webkit-inner-spin-button {
     color: #ffffff;
 }
 
-/* .input-min-price {
-    margin-right: 76px; */
+.title-cost {
+    margin: 0;
+    position: relative;
 }
 
-.filter-cost-input::after {
-    display: block;
+.p.title-cost:after{
+    content: "";
+    position: absolute;
+    left: 160px;
+    top: 40px;
     height: 20px;
     width: 2px;
-    color: #ffffff;
+    background-color: #ffffff;
 }
 
 .price-input input {

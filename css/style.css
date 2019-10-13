@@ -532,14 +532,14 @@ input::-webkit-inner-spin-button {
     flex-direction: row-reverse;
     text-align: right;
     background-repeat: no-repeat;
-    padding-top: 20px; 
+    padding-top: 24px; 
 }
 
 .star-four {
     padding-right: 0;
     margin-right: 0px; 
     background-image: url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg");
-    background-position: 92px, 23px, 46px, 69px;
+    background-position: 92px, 22px, 46px, 69px;
 }
 
 .star-three {
@@ -569,13 +569,15 @@ input::-webkit-inner-spin-button {
 .hotel-filter {
     background-image: url("../img/filter_background.jpg");
     background-position: center center;
-    padding: 26px 72px 18px 55px;
+    padding: 26px 70px 18px 55px;
     display: flex;
     position: relative;
 }
 
 .filter-cost {
+    display: flex;
     margin-left: auto;
+    flex-direction: column;
 }
 
 .price-input {
@@ -584,7 +586,7 @@ input::-webkit-inner-spin-button {
     color: #ffffff;
     font-weight: 400;
     margin-top: 10px;
-    padding: 6px 33px 6px 64px;
+    padding: 6px 32px 6px 64px;
     width: 320px;
     justify-content: space-between;
 }
@@ -598,7 +600,7 @@ input::-webkit-inner-spin-button {
     position: relative;
 }
 
-.p.title-cost:after{
+.title-cost:after{
     content: "";
     position: absolute;
     left: 160px;
@@ -619,6 +621,41 @@ input::-webkit-inner-spin-button {
 .price-input input::-webkit-input-placeholder { 
     color: #ffffff; 
 }
+
+.slider {
+    position: relative;
+    margin-top: 20px;
+}
+
+.slider-line {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.slider-line-white {
+    background: #ffffff;
+    height: 2px;
+    width: 80%;
+}
+
+.slider-button {
+    position: absolute;
+    margin-top: -12px;
+    padding: 2px;
+    background-color: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    left: 0%;
+    cursor: pointer;
+}
+
+.slider-button-max {
+    left: 79%;
+}
+
+.slider-button:hover {
+    background: #1c4f80;
+  }
 
 .filter-field {
     border: none;
@@ -649,9 +686,11 @@ input::-webkit-inner-spin-button {
     border: 2px solid #ffffff;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 7px 29px 8px 29px;
+    padding: 7px 29px 8px 33px;
     font-size: 14px;
-    margin-left: 85px;
+    margin-top: 30px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .filter-button:hover {
@@ -663,7 +702,7 @@ input::-webkit-inner-spin-button {
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    padding: 30px 72px 28px 68px;
+    padding: 33px 72px 30px 66px;
 }
 
 .sorting-list {
@@ -684,7 +723,7 @@ input::-webkit-inner-spin-button {
 .title-hotel-sorting {
     font-size: 12px;
     font-weight: 400;
-    margin: 0px 0px 0px 40px;
+    margin: 2px 0px 0px 43px;
 }
 
 .title-hotel-sorting-extra {

@@ -339,15 +339,24 @@ a {
 .form-item {
     position: relative;
     display: flex;
+    justify-content: space-between;
     margin: 0;
     padding-bottom: 30px;
     text-align: left;
+}
 
+.input-item {
+    width: 50%;
+}
+
+.adult-input {
+    width: 116px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .form-item label {
     margin-top: 7px;
-    width: 112px;
     padding-right: 15px;
 }
 
@@ -456,8 +465,25 @@ input::-webkit-inner-spin-button {
 .button-calendar {
     position: absolute;
     z-index: 1;
-    right: 13px;
-    margin-top: 13px;
+    right: 1px;
+    margin-top: 6px;
+    border: none;
+    background-color: transparent;
+}
+
+.button-action {
+    height: 38px;
+    width: 38px;
+    border: none;
+    background-color: #f2f2f2;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.title-input {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 33px;
 }
 
 .button-hotel {
@@ -712,10 +738,6 @@ input::-webkit-inner-spin-button {
     width: 100%;
 }
 
-.hotel-sorting li {
-    padding-right: 33px;
-}
-
 .title-sorting-main {
     width: 165px;
 }
@@ -732,11 +754,13 @@ input::-webkit-inner-spin-button {
 
 .title-sorting-active {
     color: #81b3d2;
+    margin-right: 33px;
 }
 
 .title-sorting-disactive {
     color: rgba(0, 0, 0, 0.3);
     border-bottom: 1px dotted #81b3d2;
+    margin-right: 33px;
 }
 
 .title-sorting-disactive:hover,
@@ -753,8 +777,26 @@ input::-webkit-inner-spin-button {
     border: none;
 }
 
-.sorting-arrow {
+.sorting-arrow-item {
     margin-left: auto;
+    padding-right: 12px;
+}
+
+.sorting-arrow:hover path,
+.sorting-arrow:focus path {
+    fill: #000000;
+}
+
+.sorting-arrow:active path {
+    fill: #81b3d2;
+}
+
+.sorting-arrow-reverse svg {
+    transform: rotate(180deg);
+}
+
+.sorting-arrow-active path {
+    fill: #81b3d2;
 }
 
 .main-footer {
@@ -769,13 +811,16 @@ input::-webkit-inner-spin-button {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 33px 0px 35px 0px;
     margin: 0;
     width: 400px;
 }
 
 .social-button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
@@ -792,12 +837,26 @@ input::-webkit-inner-spin-button {
     background-color: #5496bd;
 }
 
+.social-button:active path {
+    fill-opacity: 0.3;
+}
+
 .footer-copyright {
     font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 400px;
+}
+
+.button-copyright:hover path,
+.button-copyright:focus path {
+    fill: #81b3d2;
+}
+
+.button-copyright:active path {
+    fill: #000000;
+    fill-opacity: 0.3; 
 }
 
 .copyright-indent {

@@ -25,7 +25,6 @@ button.addEventListener('click', function(evt) {
         adult.value = storageadult;
         child.value = storagechild;
       }
-    arrival.focus();
 });
 
 window.addEventListener('keydown', function (evt) {

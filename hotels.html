@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <div class="container-body">
@@ -28,16 +29,25 @@
             <legend class="title-filter title-white">Инфраструктура:</legend>
             <ul>
               <li class="filter-line">
-                <input type="checkbox" id="filer-pool" name="pool" aria-label="Наличие бассейна" checked>
-                <label class="title-extra title-white" for="filer-pool">Бассейн</label>
+                <label class="title-extra title-white checkbox-label" for="filer-pool">
+                  <input class="visually-hidden" type="checkbox" id="filer-pool" name="pool" aria-label="Наличие бассейна" checked>
+                  <span class="checkbox-indicator"></span>
+                  Бассейн
+                </label>
               </li>
               <li class="filter-line">
-                <input type="checkbox" id="filer-parking" name="parking" aria-label="Наличие парковки">
-                <label class="title-extra title-white" for="filer-parking">Парковка</label>
+                <label class="title-extra title-white checkbox-label" for="filer-parking">
+                  <input class="visually-hidden" type="checkbox" id="filer-parking" name="parking" aria-label="Наличие парковки">
+                  <span class="checkbox-indicator"></span>
+                  Парковка
+                </label>
               </li>
               <li class="filter-line">
-                <input type="checkbox" id="filer-wifi" name="wifi" aria-label="Наличие Wi-Fi">
-                <label class="title-extra title-white" for="filer-wifi">Wi-Fi</label>
+                <label class="title-extra title-white checkbox-label" for="filer-wifi">
+                  <input class="visually-hidden" type="checkbox" id="filer-wifi" name="wifi" aria-label="Наличие Wi-Fi">
+                  <span class="checkbox-indicator"></span>
+                  Wi-Fi
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -45,16 +55,25 @@
             <legend class="title-filter title-white">Тип жилья:</legend>
             <ul>
               <li class="filter-line">
-                <input type="checkbox" id="filter-hotel" name="hotel" checked>
-                <label class="title-extra title-white" for="filter-hotel">Гостиница</label>
+                <label class="title-extra title-white checkbox-label" for="filter-hotel">
+                  <input class="visually-hidden" type="checkbox" id="filter-hotel" name="hotel" checked>
+                  <span class="checkbox-indicator"></span>
+                  Гостиница
+                </label>
               </li>
               <li class="filter-line">
-                <input type="checkbox" id="filter-motel" name="motel" checked>
-                <label class="title-extra title-white" for="filter-motel">Мотель</label>
+                <label class="title-extra title-white checkbox-label" for="filter-motel">
+                  <input class="visually-hidden" type="checkbox" id="filter-motel" name="motel" checked>
+                  <span class="checkbox-indicator"></span>
+                  Мотель
+                </label>
               </li>
               <li class="filter-line">
-                <input type="checkbox" id="filter-apart" name="apart" checked>
-                <label class="title-extra title-white" for="filter-apart">Апартаменты</label>
+                <label class="title-extra title-white checkbox-label" for="filter-apart">
+                  <input class="visually-hidden" type="checkbox" id="filter-apart" name="apart" checked>
+                  <span class="checkbox-indicator"></span>
+                  Апартаменты
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -175,7 +194,7 @@
           <li>
             <article class="hotel-card">
                 <p class="hotel-img title-hotel-card">
-                  <img src="img/villas_prew.jpg" width="135" width="90" alt="Villas at Poco Diablo">
+                  <img src="img/villas_prew.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                 </p>
                 <div class="hotel-card-item">
                   <h3><a href="" class="button button-large button-hotel">Villas at Poco Diablo</a></h3>

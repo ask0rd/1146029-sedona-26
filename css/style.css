@@ -16,11 +16,16 @@ body {
     color: #000000;
     text-transform: uppercase;
     background-color: #f2f2f2;
-  }
+}
 
 a {
     text-decoration: none;
-  }
+}
+
+.img {
+    width: 100%;
+    height: auto;;
+}
 
 .container-body {
     width: 1200px;
@@ -317,7 +322,12 @@ a {
     background-color: #ffffff;
     margin-bottom: -127px;
     padding-top: 10px;
-    
+}
+
+.search-hotel iframe {
+    border: none;
+    position: absolute;
+    z-index: 1;
 }
 
 .map {
@@ -325,16 +335,26 @@ a {
     overflow: hidden;
 }
 
-.hotel-form-search {
+.hotel-form {
     background-color: #ffffff;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     width: 568px;
     margin: 0 auto;
     padding: 0;
     padding: 55px;
     left: 50%;
     transform: translate(-50%, 0);
+    transition: 1s;
+}
+
+.hotel-form-hidden {
+    transform: translate(-50%, -100%);
+    transition: 1s;
+}
+
+.hotel-form-show {
+    transform: translate(-50%, 0%);
 }
 
 .form-item {

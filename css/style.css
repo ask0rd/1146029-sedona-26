@@ -326,7 +326,6 @@ a {
 
 .search-hotel iframe {
     border: none;
-    position: absolute;
     z-index: 1;
 }
 
@@ -348,6 +347,11 @@ a {
     transition: 1s;
 }
 
+.hotel-form-error {
+    animation: shake;
+    animation-duration: 0.6s;
+}
+
 .hotel-form-hidden {
     transform: translate(-50%, -100%);
     transition: 1s;
@@ -355,6 +359,26 @@ a {
 
 .hotel-form-show {
     transform: translate(-50%, 0%);
+}
+
+@keyframes shake {
+    0%,
+    100% {
+      transform: translateX(-50%);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-51%);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(-49%);
+    }
 }
 
 .form-item {
@@ -485,6 +509,7 @@ input::-webkit-inner-spin-button {
 .button-search {
     padding: 15px;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .button-calendar {

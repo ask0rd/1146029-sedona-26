@@ -767,6 +767,7 @@ input::-webkit-inner-spin-button {
     background-color: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
+    box-shadow: 0 2px rgba(255, 255, 255, 0.2);
     left: 0%;
     cursor: pointer;
 }

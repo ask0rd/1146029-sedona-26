@@ -1,30 +1,34 @@
 var form = document.querySelector ('.hotel-form');
 var button = document.querySelector ('.button-search-hotel');
-var arrival = document.querySelector('[name=arrival-date');
-var departure = form.querySelector('[name=departure-date');
-var adult = form.querySelector('[name=adult-amount');
-var child = form.querySelector('[name=child-amount');
+var arrival = document.querySelector('[name=arrival-date]');
+var departure = form.querySelector('[name=departure-date]');
+var adult = form.querySelector('[name=adult-amount]');
+var child = form.querySelector('[name=child-amount]');
 var isStorageSupport = true;
-var storageadult = "";
-var storagechild = "";
+var storageAdult = "";
+var storageChild = "";
 
 try {
-    storageadult = localStorage.getItem('adult');
-    storagechild = localStorage.getItem('child');
+    storageAdult = localStorage.getItem('adult');
+    storageChild = localStorage.getItem('child');
     } catch (err) {
     isStorageSupport = false;
 }
 
-form.classList.remove('hotel-form-show');
+form.classList.add('hotel-form-hidden');
 
 button.addEventListener('click', function(evt) {
     evt.preventDefault();
     form.classList.toggle('hotel-form-hidden');
     form.classList.remove('hotel-form-error');
-    if (storageadult && storagechild) {
-        adult.value = storageadult;
-        child.value = storagechild;
+    if (storageAdult && storageChild) {
+        adult.value = storageAdult;
+        child.value = storageChild;
       }
+    if (!form.classList.contains('hotel-form-hidden')) {
+      setTimeout(function() {
+        arrival.focus();
+    }, 1000); }
 });
 
 window.addEventListener('keydown', function (evt) {

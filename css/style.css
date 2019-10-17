@@ -1,11 +1,13 @@
 html {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
-            box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
@@ -34,7 +36,7 @@ a {
     padding: 0;
     margin: 0 auto;
     -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -71,7 +73,6 @@ a {
     font-size: 14px;
     line-height: 26px;
     color: #000000;
-  
     background-color: #ffffff;
 }
 
@@ -80,13 +81,13 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     padding-bottom: 16px;
     margin: 0 auto;
     margin-top: -55px;
-  }
+}
 
 .site-navigation a {
     color: #000000;
@@ -131,11 +132,10 @@ a {
     padding-right: 71px;
 }
 
-
 .feature {
     background-color: #ffffff;
     margin-top: -294px;
-    padding-top: 60px; 
+    padding-top: 60px;
 }
 
 .title {
@@ -186,7 +186,7 @@ a {
     text-align: center;
     padding: 0;
     list-style: none;
-} 
+}
 
 .feature-extra-item {
     width: 400px;
@@ -307,7 +307,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 0;
     list-style: none;
     padding-top: 40px;
@@ -319,14 +319,14 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .feature-img {
@@ -364,8 +364,8 @@ a {
     padding: 55px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
@@ -373,15 +373,15 @@ a {
 
 .hotel-form-error {
     -webkit-animation: shake;
-            animation: shake;
+    animation: shake;
     -webkit-animation-duration: 0.6s;
-            animation-duration: 0.6s;
+    animation-duration: 0.6s;
 }
 
 .hotel-form-hidden {
     -webkit-transform: translate(-50%, -100%);
-        -ms-transform: translate(-50%, -100%);
-            transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
@@ -390,46 +390,46 @@ a {
 @-webkit-keyframes shake {
     0%,
     100% {
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
     10%,
     30%,
     50%,
     70%,
     90% {
-      -webkit-transform: translateX(-51%);
-              transform: translateX(-51%);
+        -webkit-transform: translateX(-51%);
+        transform: translateX(-51%);
     }
     20%,
     40%,
     60%,
     80% {
-      -webkit-transform: translateX(-49%);
-              transform: translateX(-49%);
+        -webkit-transform: translateX(-49%);
+        transform: translateX(-49%);
     }
 }
 
 @keyframes shake {
     0%,
     100% {
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
     10%,
     30%,
     50%,
     70%,
     90% {
-      -webkit-transform: translateX(-51%);
-              transform: translateX(-51%);
+        -webkit-transform: translateX(-51%);
+        transform: translateX(-51%);
     }
     20%,
     40%,
     60%,
     80% {
-      -webkit-transform: translateX(-49%);
-              transform: translateX(-49%);
+        -webkit-transform: translateX(-49%);
+        transform: translateX(-49%);
     }
 }
 
@@ -439,8 +439,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin: 0;
     padding-bottom: 30px;
     text-align: left;
@@ -459,8 +459,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .form-item label {
@@ -473,8 +473,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .form-item input {
@@ -492,22 +492,22 @@ a {
     -moz-appearance: textfield;
 }
 
-.form-item input::-webkit-input-placeholder { 
-    color: rgba(0, 0, 0, 0.3); 
+.form-item input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .form-item input[type=text]::-ms-clear,
-.form-item input[type=text]::-ms-reveal {  
-    display: none; 
-    width : 0; 
-    height: 0; 
+.form-item input[type=text]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 .form-item input[type="search"]::-webkit-search-decoration,
 .form-item input[type="search"]::-webkit-search-cancel-button,
 .form-item input[type="search"]::-webkit-search-results-button,
-.form-item input[type="search"]::-webkit-search-results-decoration { 
-    display: none; 
+.form-item input[type="search"]::-webkit-search-results-decoration {
+    display: none;
 }
 
 .form-item input:hover {
@@ -539,7 +539,6 @@ input::-webkit-inner-spin-button {
     vertical-align: middle;
     text-transform: uppercase;
     width: 100%;
-
     border: none;
 }
 
@@ -629,7 +628,7 @@ input::-webkit-inner-spin-button {
     background-color: #ebebeb;
 }
 
- .button-minus:before {
+.button-minus:before {
     position: absolute;
     z-index: 1;
     right: 14px;
@@ -640,7 +639,7 @@ input::-webkit-inner-spin-button {
     background-color: #a9a9a9;
 }
 
- .button-plus:before {
+.button-plus:before {
     position: absolute;
     z-index: 1;
     right: 14px;
@@ -651,7 +650,7 @@ input::-webkit-inner-spin-button {
     background-color: #a9a9a9;
 }
 
- .button-plus:after{
+.button-plus:after {
     position: absolute;
     right: 14px;
     top: 17px;
@@ -660,19 +659,19 @@ input::-webkit-inner-spin-button {
     height: 3px;
     background-color: #a9a9a9;
     -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
- .button-minus:hover:before,
- .buttom-minus:focus:before {
+.button-minus:hover:before,
+.buttom-minus:focus:before {
     background-color: #000000;
 }
 
- .button-plus:hover:before,
- .buttom-plus:focus:before,
- .button-plus:hover:after,
- .buttom-plus:focus:after {
+.button-plus:hover:before,
+.buttom-plus:focus:before,
+.button-plus:hover:after,
+.buttom-plus:focus:after {
     background-color: #000000;
 }
 
@@ -743,10 +742,10 @@ input::-webkit-inner-spin-button {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-left: 30px;
     width: 258px;
 }
@@ -758,11 +757,11 @@ input::-webkit-inner-spin-button {
     margin-left: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .star {
@@ -771,16 +770,16 @@ input::-webkit-inner-spin-button {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     text-align: right;
     background-repeat: no-repeat;
-    padding-top: 24px; 
+    padding-top: 24px;
 }
 
 .star-four {
     padding-right: 0;
-    margin-right: 0px; 
+    margin-right: 0px;
     background-image: url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg"), url("../img/icon_star.svg");
     background-position: 92px, 22px, 46px, 69px;
 }
@@ -827,14 +826,14 @@ input::-webkit-inner-spin-button {
     margin-left: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .price-input {
-    border: 2px solid #ffffff; 
-    display: -webkit-box; 
-    display: -ms-flexbox; 
+    border: 2px solid #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: #ffffff;
     font-weight: 400;
@@ -842,8 +841,8 @@ input::-webkit-inner-spin-button {
     padding: 6px 32px 6px 64px;
     width: 320px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .filter-cost-input {
@@ -857,7 +856,7 @@ input::-webkit-inner-spin-button {
     position: relative;
 }
 
-.title-cost:after{
+.title-cost:after {
     content: "";
     position: absolute;
     left: 157px;
@@ -876,8 +875,8 @@ input::-webkit-inner-spin-button {
 }
 
 .price-input input::-webkit-input-placeholder,
-.price-input input::placeholder { 
-    color: #ffffff; 
+.price-input input::placeholder {
+    color: #ffffff;
     opacity: 1;
 }
 
@@ -905,7 +904,7 @@ input::-webkit-inner-spin-button {
     border: 8px solid #ffffff;
     border-radius: 50%;
     -webkit-box-shadow: 0 2px rgba(255, 255, 255, 0.2);
-            box-shadow: 0 2px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px rgba(255, 255, 255, 0.2);
     left: 0%;
     cursor: pointer;
 }
@@ -915,8 +914,8 @@ input::-webkit-inner-spin-button {
 }
 
 .slider-button:hover {
-    transform: scale(1.1,1.1);
-  }
+    transform: scale(1.1, 1.1);
+}
 
 .filter-field {
     border: none;
@@ -944,7 +943,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.checkbox-label input[type="checkbox"] + .checkbox-indicator {
+.checkbox-label input[type="checkbox"]+.checkbox-indicator {
     position: absolute;
     width: 23px;
     height: 23px;
@@ -955,25 +954,25 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.checkbox-label input[type="checkbox"]:focus + .checkbox-indicator {
+.checkbox-label input[type="checkbox"]:focus+.checkbox-indicator {
     outline: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.checkbox-label input[type="checkbox"]:checked + .checkbox-indicator {
+.checkbox-label input[type="checkbox"]:checked+.checkbox-indicator {
     width: 26px;
     position: absolute;
     border: none;
     background-image: url("../img/checkbox-checked.svg");
 }
 
-.checkbox-label input[type="checkbox"]:disabled + .checkbox-indicator {
+.checkbox-label input[type="checkbox"]:disabled+.checkbox-indicator {
     opacity: 0.2;
 }
 
 .filter-button {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     background-color: transparent;
     border: 2px solid #ffffff;
     color: #ffffff;
@@ -996,8 +995,8 @@ input::-webkit-inner-spin-button {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 32px 72px 30px 66px;
 }
 
@@ -1063,8 +1062,8 @@ input::-webkit-inner-spin-button {
 
 .sorting-arrow-reverse svg {
     -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .sorting-arrow-active path {
@@ -1079,20 +1078,20 @@ input::-webkit-inner-spin-button {
     background-color: #ffffff;
     opacity: 0.9;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
-  
+
 .social-icon {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 33px 0px 35px 0px;
     margin: 0;
     width: 400px;
@@ -1103,11 +1102,11 @@ input::-webkit-inner-spin-button {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
@@ -1134,11 +1133,11 @@ input::-webkit-inner-spin-button {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 400px;
 }
 
@@ -1149,7 +1148,7 @@ input::-webkit-inner-spin-button {
 
 .button-copyright:active path {
     fill: #000000;
-    fill-opacity: 0.3; 
+    fill-opacity: 0.3;
 }
 
 .copyright-indent {

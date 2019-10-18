@@ -955,7 +955,7 @@ input::-webkit-inner-spin-button {
 }
 
 .checkbox-label input[type="checkbox"]:focus+.checkbox-indicator {
-    outline: 2px solid rgba(255, 255, 255, 0.3);
+    outline: 2px solid #4D90FE;
 }
 
 .checkbox-label input[type="checkbox"]:checked+.checkbox-indicator {
@@ -1064,6 +1064,10 @@ input::-webkit-inner-spin-button {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.sorting-arrow-active {
+    cursor: default;
 }
 
 .sorting-arrow-active path {

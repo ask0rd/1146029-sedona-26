@@ -49,10 +49,9 @@ a {
 }
 
 .intro {
-    background-image: url("../img/polygon.png"), url("../img/intro.png"), url("../img/background_photo.jpg");
-    background-position: 0px 449px, center 74px, 0px -83px;
+    background-image: url("../img/polygon.png"), url("../img/intro.png"), url("../img/background_photo.jpg"), linear-gradient(to left top, #f49774, #81b3d2);
+    background-position: 0px 449px, center 74px, 0px -83px, center center;
     background-repeat: no-repeat;
-    background-color: #81b3d2;
     width: 1200px;
     height: 800px;
     position: relative;
@@ -173,7 +172,7 @@ a {
     width: 210px;
 }
 
-.title-realcity-desc {
+.title-realcity-description {
     width: 300px;
     margin: 0 auto;
     margin-top: 22px;
@@ -195,12 +194,23 @@ a {
     padding: 145px 0px 82px 0px;
 }
 
-.feature-description {
+.feature-big-description {
+    display: flex;
     background-color: #81b3d2;
+}
+
+.feature-description {
     width: 400px;
     padding: 46px 45px 20px 44px;
     text-align: center;
     margin: 0;
+}
+
+.feature-img {
+    width: 800px;
+    margin: 0;
+    display: flex;
+    color: #ffffff;
 }
 
 .feature-description-other {
@@ -222,7 +232,7 @@ a {
     width: 284px;
 }
 
-.title-suv {
+.title-souvenir {
     width: 273px;
 }
 
@@ -234,7 +244,7 @@ a {
     background-image: url("../img/icon_food.svg");
 }
 
-.feature-extra-suv {
+.feature-extra-souvenir {
     background-image: url("../img/icon_suv.svg");
     background-position: 169px 54px;
 }
@@ -243,7 +253,7 @@ a {
     width: 170px;
 }
 
-.title-bridge-desc {
+.title-bridge-description {
     width: 303px;
     margin: 0 auto;
     margin-top: 22px;
@@ -253,7 +263,7 @@ a {
     width: 208px;
 }
 
-.title-small-square-desc {
+.title-small-square-description {
     width: 220px;
     margin: 0 auto;
     margin-top: 20px;
@@ -263,7 +273,7 @@ a {
     width: 175px;
 }
 
-.title-beautiful-road-desc {
+.title-beautiful-road-description {
     width: 262px;
     margin: 0 auto;
     margin-top: 20px;
@@ -273,7 +283,7 @@ a {
     width: 155px;
 }
 
-.title-few-tourist-desc {
+.title-few-tourist-description {
     width: 250px;
     margin: 0 auto;
     margin-top: 20px;
@@ -297,9 +307,10 @@ a {
     font-weight: 400;
     line-height: 21px;
     text-align: left;
-    margin: 0 0 0 0;
-    margin-top: -2px;
-    margin-bottom: 18px;
+    margin: 0;
+    margin-top: 8px;
+    padding-bottom: 15px;
+    width: 116px;
 }
 
 .feature-list {
@@ -329,18 +340,12 @@ a {
     flex-direction: row-reverse;
 }
 
-.feature-img {
-    width: 800px;
-    margin: 0;
-    line-height: 0;
-}
-
 .search-hotel {
     text-align: center;
     font: inherit;
     background-color: #ffffff;
-    margin-bottom: -127px;
     padding-top: 11px;
+    margin-bottom: -119px;
 }
 
 .search-hotel iframe {
@@ -352,6 +357,7 @@ a {
 .map {
     position: relative;
     overflow: hidden;
+    display: flex;
 }
 
 .hotel-form {
@@ -517,7 +523,8 @@ a {
 
 .form-item input:focus {
     background-color: #ffffff;
-    outline: 2px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
+    outline: none;
 }
 
 .form-item-line input {
@@ -550,7 +557,7 @@ input::-webkit-inner-spin-button {
 .button-small {
     font-size: 14px;
     line-height: 21px;
-    padding: 5px 17px 4px 17px;
+    padding: 5px 18px 5px 16px;
 }
 
 .button-brown {
@@ -664,14 +671,14 @@ input::-webkit-inner-spin-button {
 }
 
 .button-minus:hover:before,
-.buttom-minus:focus:before {
+.button-minus:focus:before {
     background-color: #000000;
 }
 
 .button-plus:hover:before,
-.buttom-plus:focus:before,
+.button-plus:focus:before,
 .button-plus:hover:after,
-.buttom-plus:focus:after {
+.button-plus:focus:after {
     background-color: #000000;
 }
 
@@ -698,6 +705,10 @@ input::-webkit-inner-spin-button {
     color: rgba(0, 0, 0, 0.3)
 }
 
+.button-hotel-reserve {
+    margin-left: 2px;
+}
+
 .search-result {
     position: relative;
     padding: 0;
@@ -713,7 +724,7 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-card {
-    padding: 25px 72px 24px 72px;
+    padding: 25px 72px 15px 72px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -721,7 +732,8 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-card h3 {
-    margin: 0 0 0 0;
+    margin: 0;
+    width: 100%;
 }
 
 .hotel-card-border {
@@ -735,6 +747,7 @@ input::-webkit-inner-spin-button {
 
 .hotel-img {
     margin: 5px 0 0 0;
+    width: 135px;
 }
 
 .hotel-card-item {
@@ -743,11 +756,13 @@ input::-webkit-inner-spin-button {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     margin-left: 30px;
-    width: 258px;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.hotel-description {
+    display: flex;
 }
 
 .hotel-card-rate {
@@ -804,7 +819,8 @@ input::-webkit-inner-spin-button {
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 7px;
+    margin-top: 45px;
+    /* margin-bottom: 7px; */
     padding: 3px 0px 3px 0px;
 }
 
@@ -938,12 +954,14 @@ input::-webkit-inner-spin-button {
     position: relative;
 }
 
-.checkbox-label {
-    margin-left: 44px;
+.checkbox-indicator {
+    position: relative;
+    padding-left: 44px;
     cursor: pointer;
 }
 
-.checkbox-label input[type="checkbox"]+.checkbox-indicator {
+.checkbox-indicator:before {
+    content: "";
     position: absolute;
     width: 23px;
     height: 23px;
@@ -951,22 +969,23 @@ input::-webkit-inner-spin-button {
     padding: 3px;
     border-radius: 3px;
     left: 3px;
-    cursor: pointer;
 }
 
-.checkbox-label input[type="checkbox"]:focus+.checkbox-indicator {
-    outline: 2px solid #4D90FE;
-}
-
-.checkbox-label input[type="checkbox"]:checked+.checkbox-indicator {
+.checkbox-label input[type="checkbox"]:checked+.checkbox-indicator:before {
     width: 26px;
     position: absolute;
     border: none;
     background-image: url("../img/checkbox-checked.svg");
+    background-repeat: no-repeat;
 }
 
 .checkbox-label input[type="checkbox"]:disabled+.checkbox-indicator {
     opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.checkbox-label input[type="checkbox"]:focus+.checkbox-indicator:before {
+    outline: 2px solid #4D90FE;
 }
 
 .filter-button {
@@ -1096,7 +1115,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 33px 0px 35px 0px;
+    padding: 32px 0px 33px 0px;
     margin: 0;
     width: 400px;
 }
